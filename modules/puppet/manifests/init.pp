@@ -9,7 +9,7 @@ class puppet {
 	}
          file { '/home/vagrant/.ssh/id_rsa.pub':
            source => 'puppet:///modules/puppet/centos.pub',
-           owner  => 'ubuntu',
+           owner  => 'vagrant',
            mode   => '0600',
 	}
          cron { 'run-puppet':
