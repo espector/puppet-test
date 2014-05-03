@@ -7,8 +7,8 @@ class puppet {
            source => 'puppet:///modules/puppet/pull-updates.sh',
            mode   => '0755',
 	}
-         file { '/home/vagrant/.ssh/id_rsa.pub':
-           source => 'puppet:///modules/puppet/centos.pub',
+         file { '/home/vagrant/.ssh/id_rsa':
+           source => 'puppet:///modules/puppet/centos.priv',
            owner  => 'vagrant',
            mode   => '0600',
 	}
